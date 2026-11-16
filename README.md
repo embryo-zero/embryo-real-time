@@ -1,3 +1,10 @@
+<!-- embryo-brand -->
+# Embryo Real-Time
+
+**Embryo Real-Time** is Embryo-Zero's fork of [LiveKit](https://github.com/livekit/livekit), made by Embryo Zero Backyard Data Center Corporation. Our changes are on the `embryo` branch; see [EMBRYO.md](EMBRYO.md), [LEGAL.md](LEGAL.md) and [CHANGES-EMBRYO.md](CHANGES-EMBRYO.md). The original project's README follows unchanged, with its authors' credits.
+
+---
+
 <!--BEGIN_BANNER_IMAGE-->
 
 <picture>
