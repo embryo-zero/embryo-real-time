@@ -29,8 +29,8 @@ def ticket(room, ident, name, hours=4):
 
 @web.middleware
 async def owner_only(req, handler):
-    if req.remote not in ("127.0.0.1", "::1"):
-        return web.Response(status=403, text="Embryo Meet is owner-only")
+    if req.remote not in ("127.0.0.1", "::1") or "Tailscale-Funnel-Request" in req.headers:
+        return web.Response(status=403, text="Embryo Meet is owner-only")   # never through the public Funnel
     resp = await handler(req)
     if isinstance(resp, web.Response) and not isinstance(resp, web.WebSocketResponse):
         resp.headers.setdefault("Cache-Control", "no-store")
