@@ -310,7 +310,7 @@ func (s *LivekitServer) Start() error {
 	if s.config.Region != "" {
 		values = append(values, "region", s.config.Region)
 	}
-	logger.Infow("starting LiveKit server", values...)
+	logger.Infow("starting Embryo Real-Time (based on LiveKit)", values...)
 	if runtime.GOOS == "windows" {
 		logger.Infow("Windows detected, capacity management is unavailable")
 	}

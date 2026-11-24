@@ -134,8 +134,8 @@ func main() {
 	}
 
 	cmd := &cli.Command{
-		Name:        "livekit-server",
-		Usage:       "High performance WebRTC server",
+		Name:        "embryo-real-time",
+		Usage:       "Embryo Real-Time: live audio/video rooms (based on LiveKit, Apache-2.0)",
 		Description: "run without subcommands to start the server",
 		Flags:       append(baseFlags, generatedFlags...),
 		Action:      startServer,
