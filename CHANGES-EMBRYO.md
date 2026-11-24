@@ -8,3 +8,5 @@ Forked from 80cfa6e (commit 80cfa6e) on 2026-11-16. All changes are on the `embr
 | 2026-11-16 | README.md | Embryo name at the top; the original README follows unchanged |
 
 - 2026-11-24: program name, help line and start-up log say Embryo Real-Time (based on LiveKit). Protocol and client compatibility unchanged.
+
+- 2026-11-24: embryo/meet/ added: Embryo Meet page + ticket server (our code, Apache-2.0); uses livekit-client 2.25.0 (Apache-2.0) from our own copy.
